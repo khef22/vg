@@ -1158,6 +1158,14 @@ td {
     text-align: right;
 }
 
+aside.col-lg-3.col-md-3 {
+    padding-right: 0;
+}
+
+.dt-sidebar .textwidget {
+    padding-right: 15px;
+}
+
 /*--------------------------------------------------------------
 # Related Posts
 --------------------------------------------------------------*/
@@ -1303,7 +1311,7 @@ td {
     padding: 20px 0;
     /*background: rgba(39,48,57,.95);
     color: rgba(255,255,255,.9);*/
-    border-top: 2px solid black;
+/*    border-top: 2px solid black;*/
     background:#fff;
     color:#000;
     font-weight: 300;
@@ -1318,6 +1326,19 @@ td {
 
 .dt-footer-bar a:hover {
     color: #17bebb;
+}
+
+.dt-footer .dt-footer-text {
+    border-top: 2px solid black;
+    padding-top: 25px;
+}
+
+.dt-footer .widget-title {
+    line-height: 36px;
+}
+
+.dt-footer .widget_text {
+    margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------

@@ -73,13 +73,6 @@ get_header(); ?>
                 <?php get_sidebar(); ?>
             </div><!-- dt-sidebar -->
         </aside><!-- .col-lg-3 -->
-        <?php if ( is_active_sidebar( 'dt-front-page-after-content' ) ) : ?>
-            <div class="col-lg-12 col-md-12">
-                <div class="dt-front-sidebar-wrap">
-                    <?php dynamic_sidebar( 'dt-front-page-after-content' ); ?>
-                </div><!-- .dt-front-sidebar-wrap -->
-            </div><!-- .col-lg-12 -->
-        <?php endif; ?>
     </div><!-- .row -->
 </div><!-- .container -->
 
