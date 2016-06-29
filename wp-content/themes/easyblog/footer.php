@@ -18,11 +18,10 @@
 				<div class="col-lg-12 col-md-12">
 					<div class="dt-copyright">
 
-						<?php _e( 'Copyright &copy;', 'easyblog' ); ?> <?php echo date( 'Y' ); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a><?php _e( '. All rights reserved.', 'easyblog' )?>
-
-						<?php printf( esc_html__( 'Powered %1$s by %2$s', 'easyblog' ), '', '<a href="https://wordpress.org/" target="_blank">WordPress</a>' ); ?>
-						<span class="sep"> &amp; </span>
-						<?php _e( 'Designed by', 'easyblog' ); ?> <a href="<?php echo esc_url( 'http://daisythemes.com/'); ?>" target="_blank" rel="designer"><?php _e( 'Daisy Themes', 'easyblog' )?></a>
+						<?php _e( '&copy;', 'easyblog' ); ?> <?php echo date( 'Y' ); ?><?php _e( ' VALENTIN GABUTAN.', 'easyblog' ); ?><?php _e( ' ALL RIGHTS RESERVED.', 'easyblog' )?>
+						</br>
+						
+						<?php _e( 'DESIGNED BY VALENTIN GABUTAN. POWERED BY TUMBLR.', 'easyblog' ); ?> 
 
 					</div><!-- .dt-copyright -->
 				</div><!-- .col-lg-12 -->

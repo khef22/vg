@@ -764,11 +764,12 @@ td {
 # Front Page Before and After Content Sidebar
 --------------------------------------------------------------*/
 .dt-front-sidebar-wrap {
-    margin-top: 60px;
+    /*margin-top: 60px;*/
+    margin-top: 30px;
     background: #fff;
-    padding: 25px;
+    /*padding: 25px;
     border: 1px solid rgba(39,48,57,.08);
-    box-shadow: 0 0 5px rgba(39,48,57,.05);
+    box-shadow: 0 0 5px rgba(39,48,57,.05);*/
 }
 
 /*--------------------------------------------------------------
@@ -1300,8 +1301,11 @@ td {
 .dt-footer {
     margin-top: 60px;
     padding: 20px 0;
-    background: rgba(39,48,57,.95);
-    color: rgba(255,255,255,.9);
+    /*background: rgba(39,48,57,.95);
+    color: rgba(255,255,255,.9);*/
+    border-top: 2px solid black;
+    background:#fff;
+    color:#000;
     font-weight: 300;
     font-size: 15px;
     letter-spacing: 0.035em;
@@ -1533,4 +1537,19 @@ td {
         width: -moz-calc(100% - 20px) !important;
         width: calc(100% - 20px) !important;
     }
+}
+
+/*modified codes*/
+.widget-title{
+    color: #000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.container .col-lg-12.col-md-12{
+    padding-left: 0px;
+    padding-right: 0px;
 }
