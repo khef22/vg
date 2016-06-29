@@ -16,7 +16,7 @@ get_header(); ?>
 
 <div class="container">
 	<div class="row">
-		<div class="col-lg-8 col-md-8">
+		<div class="col-lg-9 col-md-9">
 			<div id="primary" class="content-area dt-content-area">
 				<main id="main" class="site-main" role="main">
 
@@ -35,13 +35,13 @@ get_header(); ?>
 
 				</main><!-- #main -->
 			</div><!-- #primary -->
-		</div><!-- .col-lg-8 -->
+		</div><!-- .col-lg-9 -->
 
-		<aside class="col-lg-4 col-md-4">
+		<aside class="col-lg-3 col-md-3">
 			<div class="dt-sidebar">
 				<?php get_sidebar(); ?>
 			</div><!-- .dt-sidebar -->
-		</aside><!-- .col-lg-4 -->
+		</aside><!-- .col-lg-3 -->
 	</div><!-- .row -->
 </div><!-- .container -->
 

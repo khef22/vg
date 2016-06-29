@@ -36,11 +36,6 @@
 							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						<?php endif; ?>
 
-						<?php
-						$description = get_bloginfo( 'description', 'display' );
-						if ( $description || is_customize_preview() ) : ?>
-							<p class="site-description"><?php echo $description; ?></p>
-						<?php endif; ?>
 
 					</div><!-- .dt-logo -->
 				</div><!-- .col-lg-12 -->
@@ -50,7 +45,7 @@
 		<nav class="dt-menu-wrap">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12 col-md-12">
+					<div class="col-md-9 col-sm-12">
 						<div class="dt-menu-md">
 							<?php _e( 'Menu', 'easyblog' ); ?>
 							<span><i class="fa fa-bars"></i> </span>
@@ -58,20 +53,11 @@
 
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</div><!-- .col-lg-12 -->
+					<div class="col-md-3 col-sm-12">
+					<?php get_search_form(); ?>
+					</div>
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</nav><!-- .dt-menu-wrap -->
 
 	</header><!-- .dt-header -->
-
-	<?php if( ! is_front_page() && ! is_home() ) : ?>
-		<div class="dt-breadcrumbs">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12">
-						<?php easyblog_breadcrumb(); ?>
-					</div><!-- .col-lg-12 -->
-				</div><!-- .row-->
-			</div><!-- .container-->
-		</div><!-- .dt-breadcrumbs-->
-	<?php endif; ?>
