@@ -11,7 +11,7 @@ get_header(); ?>
 
  <div class="container">
      <div class="row">
-         <div class="col-lg-8 col-md-8">
+         <div class="col-lg-9 col-md-9">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main" role="main">
 
@@ -28,7 +28,7 @@ get_header(); ?>
                     <div class="dt-archive-posts">
                         <?php
 
-                        while ( have_posts() ) : the_post(); ?>
+                        while ( have_posts() ) : the_post();?>
 
                             <div class="dt-archive-post">
                                 <figure>
@@ -38,6 +38,9 @@ get_header(); ?>
                                 <article>
                                     <header class="entry-header">
                                         <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+                                        <div class="entry-meta">
+                                            <?php easyblog_posted_on(); ?>
+                                        </div><!-- .entry-meta -->
                                     </header><!-- .entry-header -->
 
                                     <div class="dt-archive-post-content">
@@ -71,7 +74,7 @@ get_header(); ?>
             </div><!-- #primary -->
          </div><!-- .col-lg-8 -->
 
-         <aside class="col-lg-4 col-md-4">
+         <aside class="col-lg-3 col-md-3">
              <div class="dt-sidebar">
                  <?php get_sidebar(); ?>
              </div><!-- .dt-sidebar -->

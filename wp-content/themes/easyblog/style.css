@@ -449,12 +449,12 @@ object {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background: #f3f4f6;
+    font-family: CooperHewitt;
+    background: #fff;
     font-size: 16px;
     line-height: 1.8em;
     letter-spacing: 0.01em;
-    color: rgba(39,48,57,.8);
+    color: #000;
 }
 
 .transition5 {
@@ -500,7 +500,7 @@ a {
 }
 
 a:hover {
-    color: #17bebb;
+    color: #999;
 }
 
 table {
@@ -656,6 +656,7 @@ td {
 
     padding: 14px 20px;
     color: #000;
+    font-weight: bold;
 }
 
 .dt-menu-wrap li:hover > a,
@@ -727,6 +728,13 @@ td {
 
 .dt-menu-wrap li ul li:last-child {
     border-bottom: 1px solid rgba(39,48,57,.06);
+}
+
+.dt-menu-wrap .search-field {
+    font-weight: normal;
+    text-align: right;
+    border-radius: 0;
+    padding: 5px 15px;
 }
 
 /*
@@ -802,6 +810,7 @@ td {
 
 .dt-archive-post article {
 /*    padding: 50px 40px 80px;*/
+    padding-top: 40px
 }
 
 .dt-archive-post article .entry-title {
@@ -820,6 +829,7 @@ td {
 .dt-archive-post-content p {
     text-align: justify;
     margin-bottom: 50px;
+    margin-top: 5px
 }
 
 .dt-archive-post .entry-footer {
@@ -840,7 +850,7 @@ td {
     border: 1px solid #000;
     word-wrap: break-word;
     width: 50px;
-    border-radius: 30px;
+    border-radius: 50%;
     line-height: 16px;
     padding: 8px 0px;
     color: #fff;
@@ -891,8 +901,8 @@ td {
 .dt-pagination-nav a:hover,
 .dt-pagination-nav .current:hover,
 .dt-pagination-nav .current {
-    color: #17bebb;
-    border-color: #17bebb;
+    color: #999;
+    border-color: #999;
 }
 
 /*--------------------------------------------------------------
@@ -997,10 +1007,11 @@ td {
     border-color: transparent;
 
     border-radius: 50%;
+    border: 1px solid #000;
+
 }
 
 .dt-social-icons li .fa:hover {
-    border: 2px solid rgba(39,48,57,.15);
     color: #000;
     background: #fff;
 }
@@ -1073,7 +1084,7 @@ td {
 }
 
 .tagcloud a:hover {
-    background: #17bebb;
+    background: #999;
 }
 
 /*--------------------------------------------------------------
@@ -1083,8 +1094,10 @@ td {
 .dt-content-area {
     background: #fff;
     padding: 10px 25px;
+/*
     border: 1px solid rgba(39,48,57,.08);
     box-shadow: 0 0 5px rgba(39,48,57,.05);
+*/
 }
 
 /*--------------------------------------------------------------
@@ -1295,12 +1308,12 @@ aside.col-lg-3.col-md-3 {
 
 .entry-meta a,
 .entry-footer a {
-    color: rgba(39,48,57,.5);
+    color: #000;
 }
 
 .entry-meta a:hover,
 .entry-footer a:hover {
-    color: #17bebb;
+    color: #999;
 }
 
 /*--------------------------------------------------------------
@@ -1325,7 +1338,7 @@ aside.col-lg-3.col-md-3 {
 }
 
 .dt-footer-bar a:hover {
-    color: #17bebb;
+    color: #999;
 }
 
 .dt-footer .dt-footer-text {
@@ -1335,6 +1348,7 @@ aside.col-lg-3.col-md-3 {
 
 .dt-footer .widget-title {
     line-height: 36px;
+    font-weight: bold;
 }
 
 .dt-footer .widget_text {
@@ -1369,7 +1383,8 @@ aside.col-lg-3.col-md-3 {
 }
 
 #back-to-top:hover {
-    background: #17bebb;
+    background: #000;
+    color: #fff;
 }
 
 #back-to-top.show {
@@ -1570,7 +1585,86 @@ aside.col-lg-3.col-md-3 {
     text-align: center;
 }
 
+.widget_text p {
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #000 !important;
+}
+
 .container .col-lg-12.col-md-12{
     padding-left: 0px;
     padding-right: 0px;
 }
+
+
+
+/****************/
+
+#tinyform {
+    width: 100% !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+
+#tinyform #contactsubmit {
+    background: #000;
+    border-radius: 0;
+    width: 100%;
+    padding: 25px;
+    line-height: 5px;
+    font-size: 15px;
+}
+
+.entry-header {
+    text-align: center;
+}
+
+.entry-header .entry-title,
+.entry-header .entry-title a {
+    color: black !important;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 0;
+}
+
+.dt-archive-post-content p,
+.entry-content p {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.entry-meta span.separator-line:nth-child(2) {
+    padding-left: 2%;
+    padding-right: 4%;
+}
+
+.entry-meta span.separator-line:nth-child(4) {
+    padding-left: 4%;
+    padding-right: 2%;
+}
+
+
+/****FONT***/
+
+@font-face {
+font-family: CooperHewitt;
+src: url("fonts/CooperHewitt-Book.otf") format("opentype");
+}
+
+@font-face {
+font-family: CooperHewitt;
+font-weight: bold;
+src: url("fonts/CooperHewitt-Bold.otf") format("opentype");
+}
+
+@font-face {
+font-family: CooperHewitt;
+font-weight: lighter;
+src: url("fonts/CooperHewitt-Light.otf") format("opentype");
+}
+

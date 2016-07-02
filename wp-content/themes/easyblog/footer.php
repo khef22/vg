@@ -28,7 +28,7 @@
                         <?php _e( '&copy;', 'easyblog' ); ?> <?php echo date( 'Y' ); ?><?php _e( ' VALENTIN GABUTAN.', 'easyblog' ); ?><?php _e( ' ALL RIGHTS RESERVED.', 'easyblog' )?>
                         </br>
 
-                        <?php _e( 'DESIGNED BY VALENTIN GABUTAN. POWERED BY TUMBLR.', 'easyblog' ); ?>
+                        <?php _e( 'DESIGNED BY VALENTIN GABUTAN. POWERED BY HAIRdoWORKS.', 'easyblog' ); ?>
 
                     </div><!-- .dt-copyright -->
                 </div><!-- .col-lg-12 -->
