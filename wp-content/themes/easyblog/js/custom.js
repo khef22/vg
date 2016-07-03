@@ -1,9 +1,9 @@
-jQuery(document).ready(function() {
+jQuery(document).ready(function () {
 
     // Toggle Menu
-    jQuery( '.dt-menu-md' ).on( 'click', function(){
-        jQuery( '.dt-menu-wrap .menu' ).toggleClass( 'menu-show' );
-        jQuery(this).find( '.fa' ).toggleClass( 'fa-bars fa-close' );
+    jQuery('.dt-menu-md').on('click', function () {
+        jQuery('.dt-menu-wrap .menu').toggleClass('menu-show');
+        jQuery(this).find('.fa').toggleClass('fa-bars fa-close');
     });
 
     // Back to Top
@@ -28,4 +28,13 @@ jQuery(document).ready(function() {
             }, 600);
         });
     }
+
+
+    jQuery(window).scroll(function () {
+        if (jQuery(window).scrollTop() > 142) {
+            jQuery('.dt-menu-wrap').addClass('fixed-menu');
+        } else {
+            jQuery('.dt-menu-wrap').removeClass('fixed-menu');
+        }
+    });
 });

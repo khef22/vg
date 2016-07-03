@@ -1649,6 +1649,20 @@ aside.col-lg-3.col-md-3 {
 }
 
 
+.fixed-menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    border-top: 0;
+/*
+    background-color: #000;
+    color: #fff;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+*/
+}
+
 /****FONT***/
 
 @font-face {
